@@ -16,11 +16,6 @@ public interface ScrapingInterface {
 	 * @throws Exception 
 	 */
 	public HashMap<String, String> scrapingFacade() throws Exception;
-	/**
-	 * Urlを集めるメソッド。
-	 * @return
-	 */
-	abstract ArrayList<String> collectUrl(String baseUrl, int urlMaxLength);
 
 	
 	/**

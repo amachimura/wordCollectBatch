@@ -1,6 +1,7 @@
 package main;
 
 import wordcollectimpl.EnglishScraping;
+import wordcollectimpl.crawl.*;
 
 public class MainClass {
 
@@ -10,15 +11,22 @@ public class MainClass {
 		mc.execute();
 	}
 	
-	private void execute(){
-		EnglishScraping es = new EnglishScraping();
+	private void execute() {
+		SiteCrawlController cr = new SiteCrawlController();
 		try {
-			System.out.println("midashi:"+ es.scraping());
+			cr.control();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+//		EnglishScraping es = new EnglishScraping();
+//		try {
+//			System.out.println("midashi:"+ es.scraping());
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
 	}
 
 }
